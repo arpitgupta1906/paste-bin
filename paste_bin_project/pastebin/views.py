@@ -13,6 +13,7 @@ from django.urls import reverse_lazy
 class PasteCreate(CreateView):
     model=Paste
     fields=['text','name']
+    # template_name="pastebin/paste_form.html"
 
 class PasteDetail(DetailView):
     model=Paste
